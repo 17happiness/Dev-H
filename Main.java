@@ -35,7 +35,12 @@ public class Main {
             D = opp.div(x,y);
             System.out.println(D);
                 break;
-             case 5:
+            case 5:
+            int F;
+            F = opp.mod(x,y);
+            System.out.println(F);
+                break;
+             case 6:
             System.out.println("Thanks");
                 break;
             
