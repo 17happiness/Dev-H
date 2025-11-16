@@ -1,21 +1,18 @@
 import java.util.Scanner;
 
-public class Main {
+public class day1 {
 
-    // ----------- FUNCTION / METHOD EXAMPLE -------------
     public static String greetUser(String name) {
         return "Hello " + name + "! Welcome to Java.";
     }
-
+////////////////////////////////////////////////////////////////
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
         System.out.println("WELCOME ");
         System.out.println("-------------------------------------");
 
-        // ---------------------------
-        // 1. USER VARIABLES & TYPES
-        //------------------------------
+//////////////////////////////////////////////////////////////////
         System.out.println("Enter your name: ");
         String userName = input.nextLine();
         System.out.println("Nice to meet you, " + userName);
@@ -35,9 +32,8 @@ public class Main {
 
         System.out.println("You entered: " + userNumber);
 
-        // --------------------------------
-        // 2. BASIC ARITHMETIC OPERATIONS
-        // --------------------------------
+        
+//////////////////////////////////////////////////////////////////////////////
         System.out.print("\nEnter another number: ");
         double num2 = input.nextDouble();
 
@@ -51,11 +47,9 @@ public class Main {
             System.out.println("DIVISION: Cannot divide by zero.");
         }
 
-        input.nextLine(); // Clear buffer
+        input.nextLine(); 
 
-        // -------------------------
-        // 3. STRING MANIPULATION
-        // -------------------------
+//////////////////////////////////////////////////////////////////////////
         System.out.print("\nEnter a word: ");
         String userWord = input.nextLine();
 
@@ -69,9 +63,7 @@ public class Main {
             System.out.println("Word too short for first 3 letters.");
         }
 
-        // -------------------------
-        // 4. ARRAY OPERATIONS
-        // -------------------------
+////////////////////////////////////////////////////////////////////////////////
         System.out.println("\nLet's build an array of 3 items.");
 
         System.out.print("Enter item 1: ");
@@ -91,9 +83,7 @@ public class Main {
         System.out.println("First item: " + myArray[0]);
         System.out.println("Last item: " + myArray[2]);
 
-        // -------------------------
-        // 5. IF CONDITIONS
-        // -------------------------
+/////////////////////////////////////////////////////////////////////////
         System.out.print("\nEnter your age: ");
         String ageInput = input.nextLine();
 
@@ -112,9 +102,7 @@ public class Main {
             System.out.println("Invalid age.");
         }
 
-        // -------------------------
-        // 6. LOOP EXAMPLE
-        // -------------------------
+///////////////////////////////////////////////////////////////////
         System.out.print("\nEnter a message: ");
         String msg = input.nextLine();
 
@@ -123,15 +111,11 @@ public class Main {
             System.out.println(i + ": " + msg);
         }
 
-        // -------------------------
-        // 7. FUNCTION CALL
-        // -------------------------
+//////////////////////////////////////////////////////////////////////
         System.out.println("\nFUNCTION DEMO:");
         System.out.println(greetUser(userName));
 
-        // -------------------------
-        // 8. ERROR HANDLING
-        // -------------------------
+/////////////////////////////////////////////////////////////////////
         System.out.print("\nEnter a number to square: ");
         String valueInput = input.nextLine();
 
@@ -142,7 +126,7 @@ public class Main {
             System.out.println("Error: That was not a valid number.");
         }
 
-        System.out.println("\nPROGRAM FINISHED SUCCESSFULLY!");
+        System.out.println("PROGRAM FINISHED SUCCESSFULLY!");
     }
 }
 
