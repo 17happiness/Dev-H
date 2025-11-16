@@ -1,0 +1,49 @@
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+import java.util.Scanner;
+
+public class Main {
+   public Main() {
+   }
+
+   public static void main(String[] var0) {
+      Scanner var1 = new Scanner(System.in);
+      operation var2 = new operation();
+      System.out.println("*****Calculator*****");
+      System.out.printf("1.Addition\n2.Subtractiom\n3.Multiplication\n4.Division\n5.Exit\n");
+      System.out.println("Enter x");
+      int var3 = var1.nextInt();
+      System.out.println("Enter y");
+      int var4 = var1.nextInt();
+
+      int var5;
+      do {
+         System.out.println("Enter choice");
+         var5 = var1.nextInt();
+         switch (var5) {
+            case 1:
+               int var6 = var2.add(var3, var4);
+               System.out.println(var6);
+               break;
+            case 2:
+               int var7 = var2.sub(var3, var4);
+               System.out.println(var7);
+               break;
+            case 3:
+               int var8 = var2.mul(var3, var4);
+               System.out.println(var8);
+               break;
+            case 4:
+               int var9 = var2.div(var3, var4);
+               System.out.println(var9);
+               break;
+            case 5:
+               System.out.println("Thanks");
+               break;
+            default:
+               System.out.println("Enter a Number");
+         }
+      } while(var5 != 5);
+
+      var1.close();
+   }
+}
