@@ -127,6 +127,7 @@ public class day1 {
         }
 
         System.out.println("PROGRAM FINISHED SUCCESSFULLY!");
+        System.out.println("HOORAY");
     }
 }
 
